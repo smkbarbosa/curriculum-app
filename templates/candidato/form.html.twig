@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block form %}
+    <div class="col-md-6 center_div mt-4">
+        {% form_theme form with 'bootstrap_4_horizontal_layout.html.twig' %}
+        {{ form_start(form) }}
+
+            {{ form_widget(form) }}
+        {{ form_row(form.foto) }}
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}

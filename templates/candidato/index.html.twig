@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Candidato{% endblock %}
+
+
+
+{% block main %}
+
+<div class="container-fluid">
+
+        <h2 class="mt-5 center_div">Cadastro de Currículo</h2>
+    <div class="row align-center">
+
+    {{ block("form", "candidato/form.html.twig") }}
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
